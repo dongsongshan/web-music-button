@@ -1,16 +1,16 @@
 # web-music-button
 
-`web-music-button` 是一个简单且轻量级的 npm 包，它允许你快速在网页上添加一个音乐播放器按钮。通过这个按钮，用户可以一键控制背景音乐的播放和暂停。
+`web-music-button` is a simple and lightweight npm package that allows you to quickly add a music player button to your webpage. This button enables users to control background music playback with a single click.
 
-## 功能特点
+## Features
 
-- **易于集成**：可以快速在网页上添加音乐播放器按钮。
-- **简单控制**：允许用户播放和暂停背景音乐。
-- **可定制**：可以轻松自定义按钮的外观和行为。
+- **Easy Integration**: Quickly add a music player button to your webpage.
+- **Simple Controls**: Allows users to play and pause background music effortlessly.
+- **Customizable**: Easily customize the appearance and behavior of the button.
 
-## 安装
+## Installation
 
-你可以通过 npm 安装 `web-music-button`：
+You can install `web-music-button` via npm:
 
 ```bash
 npm install web-music-button
@@ -21,13 +21,13 @@ npm install web-music-button
 ```
 
 ```javascript
-require('web-music-button/dist/web-music-button.css')
+require('web-music-button/dist/web-music-button.css');
 
-const WebMusicButton = require('web-music-button')
+const WebMusicButton = require('web-music-button');
 
 const musicButton = new WebMusicButton({
-    musicUrl: '', //替换为你实际的音乐地址
-})
+    musicUrl: '', // Replace with your actual music URL
+});
 
-musicButton.init()
+musicButton.init();
 ```

@@ -2,7 +2,7 @@ require('./style.css')
 
 function WebMusicButton(options) {
     this.options = options || {};
-    this.options.musicUrl = options.musicUrl || 'http://nginx.web-framework-jr3m.1660089233265532.cn-zhangjiakou.fc.devsapp.net/images/static/diving-watch/music.mp3';
+    this.options.musicUrl = options.musicUrl
     this.options.isPlay = false
 }
 

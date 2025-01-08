@@ -1,6 +1,6 @@
 {
   "name": "web-music-button",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a button used for control web bgm ",
   "main": "dist/web-music-button.js",
   "scripts": {

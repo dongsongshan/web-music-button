@@ -1,4 +1,4 @@
-require('./style.css')
+import './style.css' 
 
 function WebMusicButton(options) {
     this.options = options || {};
@@ -7,6 +7,7 @@ function WebMusicButton(options) {
 }
 
 WebMusicButton.prototype.init = function() {
+    console.log('0.0.3')
     this.create();
     this.action();
 };
@@ -26,6 +27,7 @@ WebMusicButton.prototype.create = function() {
 
 WebMusicButton.prototype.action = function() {
     var musicButton = document.getElementById('music-button');
+    if (!musicButton) return;
     musicButton.addEventListener('click',()=>{
         if(!this.options.isPlay){
             this.play()
@@ -72,4 +74,4 @@ WebMusicButton.prototype.pause = function() {
     }
 };
 
-module.exports = WebMusicButton;
+export default WebMusicButton;

@@ -1,23 +1,28 @@
 {
   "name": "web-music-button",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "a button used for control web bgm ",
   "main": "dist/web-music-button.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "server": "npx webpack serve",
+    "babel": "babel src/x.js --out-file dist/x.mjs --presets=@babel/preset-env --plugins=@babel/plugin-transform-modules-commonjs"
   },
   "author": "Dong Songshan",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.18.13",
-    "@babel/preset-env": "^7.18.10",
-    "babel-loader": "^8.2.5",
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.26.3",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
     "css-loader": "^7.1.2",
-    "mini-css-extract-plugin": "^2.9.0",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.10.0"
+    "mini-css-extract-plugin": "^2.9.2",
+    "vite": "^6.0.7",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
   },
   "dependencies": {}
 }
